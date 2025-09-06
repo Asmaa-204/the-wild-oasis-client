@@ -29,6 +29,8 @@ export async function getCabinPrice(id) {
     .eq("id", id)
     .single();
 
+  // await new Promise((res) => setTimeout(res, 5000));
+
   if (error) {
     console.error(error);
   }
